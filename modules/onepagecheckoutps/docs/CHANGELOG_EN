@@ -1,0 +1,377 @@
+CHANGELOG
+
+[ADD] = Adding New Functionality
+[MOD] = Modifications and upgrades
+[FIX] = Fix problems or errors (bugs)
+
+V2.3.5 (07/27/2017)
+[+] ADD: Compatibility with payment method "MonerisAPI".
+[+] ADD: Compatibility with payment method "Prestalia_Cashondelivery".
+[+] ADD: Compatibility with module "ASMParcelShop".
+[+] ADD: Compatibility with module "Redsys" (IdNovate).
+[+] ADD: Compatibility with module "Senangpay".
+[+] ADD: Compatibility with module "Amanpay".
+[+] ADD: Option to avoid that the shipping are reaload when changing of state, ideal for stores that always have the same carriers for any zone.
+[+] ADD: Direct validation of the ID of Spain.
+[*] MOD: When forcing visualization to the methods of payment no longer loads the hookPayment.
+[*] MOD: User guide update.
+[*] MOD: The oAuth Client class is updated.
+[-] FIX: Problem saving options in Multi-Store.
+[-] FIX: The selected office was not saved. Correos module.
+[-] FIX: Translation sharing problem.
+[-] FIX: Problem with free shipping remaining per carrier.
+[-] FIX: Now calculate the VAT also changing province in the billing address.
+[-] FIX: The first and last name of the billing address was replaced by the customer's.
+
+V2.3.4 (07/01/2017)
+[+] ADD: Compatibility with payment method "swawebpayws".
+[+] ADD: Option to collapse and expand the translation sections.
+[*] MOD: Modification to compatibility with payment method "SeurCashOnDelivery".
+[*] MOD: When registering through social networks, it is redirected to the addresses section.
+[-] FIX: Solution to compatibility with payment method "firstdata": It erased the data of the credit card to the clients without registration.
+[-] FIX: When creating an account by social networks, an empty address was always created.
+[-] FIX: When displaying the weight in the cart summary, it was always displayed in kg and not in the weight configured by the store.
+[-] FIX: Deleting products from PrestaShop 1.5, the OPC Not Delete client session was started.
+[-] FIX: Improved visualization of loading.
+[-] FIX: Add a discount coupon for the total of the purchase, generated error and did not allow to make the purchase as a guest.
+[-] FIX: With the field "country" disabled, it did not load the state from the customer address.
+
+V2.3.3 (06/06/2017)
+[+] ADD: Compatibility with payment method "Heidelpay".
+[+] ADD: Compatibility with payment method "PayOnline".
+[+] ADD: Compatibility with payment method "FirstData" v1.2.9.
+[-] FIX: Important bug solved from version 2.3.2. The "State" field was always required to the invoice address to the customer logged, regardless of whether the customer wanted to place an invoice address.
+[-] FIX: The OPC Not Delete client was duplicated.
+[-] FIX: The social networking icons were not shown in the login popup.
+[-] FIX: When there were no shipping and billing addresses, new addresses were always being created to the customer.
+
+V2.3.2 (05/23/2017)
+[+] ADD: Compatibility with payment method "CashOnDeliveryPlus" Version payment and free.
+[+] ADD: Compatibility with payment method "CashOnDeliveryFeePlus" v4.3.1 (Prestalia).
+[+] ADD: Compatibility with payment method "PayTpv".
+[+] ADD: Compatibility with payment method "Netaxept".
+[+] ADD: Compatibility with payment method "Bankwirediscount" v0.9 (IdeaCommerce).
+[+] ADD: Compatibility with module "Checkvat" v1.6 (Coeos.pro).
+[+] ADD: Compatibility with module "Paymentfee" v1.0 (IdeaCommerce).
+[+] ADD: Add more words to the Czech translation.
+[*] MOD: Validate if activating the autocomplete of google, is also entered its api key.
+[*] MOD: It is disabled to be able to change options to the ID fields, sometimes by error they were changed and caused problems.
+[-] FIX: Solution to important problems encountered when interacting with multiple addresses.
+
+V2.3.1 (04/25/2017)
+[+] ADD: Compatibility with payment method "StripePro".
+[+] ADD: Compatibility with payment method "PaypalPlus".
+[+] ADD: Compatibility with payment method "MoIp".
+[+] ADD: Compatibility with payment method "MercadoPago".
+[*] MOD: The order summary changes to position above the carriers and the payments when the option of "Activate compatibility with non-supported payment methods" is activated.
+[*] MOD: Floating continue and buy buttons now are only visible on screens that are more than 640 pixels high.
+[*] MOD: When forcing the visualization of a method of payment no longer sends to a new page.
+[*] MOD: Modification of compatibility with the payment method "CashOnDeliveryPlus" PrestaHost.eu
+[-] FIX: Fixed issue with module Correos Express.
+[-] FIX: The social networking icon was not shown.
+
+V2.3.0 (04/07/2017)
+[+] ADD: Compatibility with payment method "Consel".
+[+] ADD: Compatibility with payment method "esp_contrareembolso".
+[+] ADD: Compatibility with payment method "Worldpay".
+[+] ADD: Compatibility with "Email Verification OPC".
+[+] ADD: Compatibility with "PProperties".
+[+] ADD: When the city list is displayed with GeoNames, when you select a city, the postal code is autocompleted.
+[*] MOD: When logging in via social networks, the default value of the newsletter field was not taken.
+[*] MOD: More improvements on the management of addresses.
+[*] MOD: Updating of the translation to the Dutch.
+[*] MOD: Aesthetic little touches.
+[-] FIX: Compatibility issue with stripe official.
+
+V2.2.6 (02/28/2017)
+[+] ADD: Compatibility with payment method "Paypal Plus".
+[+] ADD: Compatibility with payment method "AmzPayment (Amazon Payment)".
+[+] ADD: Compatibility with payment method "Dibs".
+[+] ADD: Compatibility with payment method "StripePayment".
+[+] ADD: Compatibility with payment method "VivaPayment".
+[+] ADD: Compatibility with payment method "WayForPay".
+[+] ADD: Compatibility with payment method "ecm_liqpay".
+[+] ADD: Compatibility with payment method "ThePay".
+[+] ADD: Compatibility with payment method "eTransactions".
+[+] ADD: Compatibility with payment method "baCodWithFees".
+[+] ADD: Compatibility with version 2.0.2 "Last Minute OPC".
+[+] ADD: Support for sending method "VCPostNordDK".
+[+] ADD: Registration and login through Paypal.
+[+] ADD: Does not delete the message of the order, so it is loaded.
+[*] MOD: Improvement and internal cleaning of code.
+[*] MOD: User guide update.
+[-] FIX: Have several products in the cart, and then log in or register, did not show the carries.
+[-] FIX: If it was deactivated not to require fiscal identification in the country, it was still required at checkout.
+[-] FIX: On the checkout page, the drop-downs of some menus were not shown.
+[-] FIX: The tables were always installed with MyISAM, now they are installed as configured in the prestashop.
+
+V2.2.5 (01/10/2016)
+[+] ADD: Compatibility with payment method "MdStripe (https://github.com/firstred/mdstripe/releases)".
+[+] ADD: Compatibility with payment method "ThePayBinder".
+[+] ADD: Support for shipping method "Shargo.io".
+[+] ADD: Support for shipping method "Soliberte".
+[+] ADD: Compatibility with "djtalbrazilianregister".
+[+] ADD: Slovak translation.
+[+] ADD: Portuguese translation.
+[+] ADD: It is now possible to define a default province to directly display the carriers and not to display it pre-selected at the checkout.
+[+] ADD: An informational text is added for those who forget to fill out the invoice address.
+[*] MOD: Improved integration with shipping method "correos" v4.0.5.
+[-] FIX: When you registered to the newsletter and then registered as a customer, it was removed from the newsletter.
+[-] FIX: Did not alert missing fields in the invoice address if this was left empty.
+[-] FIX: When a customer did not have an address, the module created one automatically and showed a default status and postal code.
+
+V2.2.4 (10/02/2016)
+[+] ADD: Support payment method "PayPlug".
+[+] ADD: Support payment method "DM_Cashondelivery".
+[+] ADD: Support payment method "Liisi".
+[+] ADD: Support for shipping method "MondialRelay".
+[+] ADD: Support for "CustomPaymentMethod".
+[+] ADD: Czech translation.
+[*] MOD: Now show social networks in the login popup.
+[*] MOD: Improved compatibility with payment method "Braintree" "Peter Michael Solidum".
+[-] FIX: Reloaded shipping methods when selecting a carrier already selected.
+
+V2.2.3 (14/10/2016)
+[+] ADD: Support payment method "AuthorizeDoNet" by Presto-Changeo.
+[+] ADD: Support payment method "AddGoPayNew".
+[+] ADD: Support payment method "Braintree" from "Peter Michael Solidum (http://addons.prestashop.com/en/20726-braintree-payment-gateway.html)".
+[+] ADD: Support payment method "StripeJS" from "Ollie McFarlane (http://omcfarlane.co.uk/prestashop-stripe-module-free)".
+[+] ADD: Support for shipping method "InPost".
+[+] ADD: Support for shipping method "AuPost".
+[+] ADD: Support for shipping method "LanavettePickup".
+[+] ADD: Turkish translation.
+[+] ADD: Portuguese translation of the registration fields.
+[*] MOD: Restricting characters in the registration fields.
+[-] FIX: Do not loaded correctly popup payment methods in some versions of prestashop 1.5.
+[-] FIX: It was not possible to edit the description of some registration fields.
+[-] FIX: Keeping active autocomplete postcode (GeoNames), validation did not work when switching country.
+[-] FIX: Repeatedly to the call of loadCarrier when you blur the postal code.
+[-] FIX: In some templates to change the number of products by the box did not work.
+[-] FIX: Fix problem with version 4 of module correos.
+[-] FIX: Sometimes it was not possible to enter submenus, expanded and contracted automatically.
+[-] FIX: Problem with new version 3.11.1 of payment method Paypal.
+
+V2.2.2 (09/07/2016)
+[+] ADD: Support payment method "NPaypalPro".
+[+] ADD: Support payment method "Authorizeaim.Net".
+[+] ADD: Support payment method "PayLater".
+[+] ADD: Support for shipping method "BoxBerryDelivery".
+[+] ADD: Option to capitalize text fields.
+[*] MOD: Improved re-use addresses automatically created.
+[*] MOD: Optimizacion icons and images.
+[*] MOD: Improved compatibility payment method "BraintreeJS".
+[-] FIX: Problem with the save button information and purchase order, creating a new address.
+[-] FIX: Wrong showed the currency format to apply a discount.
+
+V2.2.1 (08/16/2016)
+[+] ADD: Support payment method "MultiSafePay".
+[*] MOD: Now the autocomplete using bootstrap library.
+[*] MOD: Now GeoNames functionality work together.
+[*] MOD: Updated library that makes the validation of the fields.
+[-] FIX: Final solution when the VAT number is used.
+[-] FIX: Changing colors of buttons or alerts, always she stayed with a blue border.
+[-] FIX: Problem saving customer information with the button on the first step.
+[-] FIX: Dont show the icons of facebook and google.
+
+V2.2.0 (08/05/2016)
+[+] ADD: Support payment method "StripePayment".
+[+] ADD: Support module "Configurator".
+[*] MOD: Improved re-use addresses automatically created.
+[*] MOD: Improved to use autocomplete Google Maps.
+[-] FIX: Solution to security vulnerabilities.
+
+V2.1.8 & V2.1.9 (07/19/2016)
+[+] ADD: Now show the remaining value for free shipping by carrier.
+[+] ADD: Support payment method "msstripe".
+[+] ADD: Support payment method "tranzila".
+[+] ADD: Support for transport method "baliknapostu".
+[*] MOD: Do not take the title from the configuration placed payment method "stripejs".
+[-] FIX: Failed the compatibility with the payment method "baintreejs"
+[-] FIX: Failed the compatibility with the payment method "codfee" of "idnovate".
+[-] FIX: It showed bad texts VAT included when placed a VAT Number.
+[-] FIX: Do not showing the color palette.
+[-] FIX: For iOS and Chrome (private windows) in mobile, did not load module steps correctly.
+
+V2.1.7 (06/10/2016)
+[+] ADD: Support payment method "payplug".
+[+] ADD: Support payment method "paysonCheckout2".
+[+] ADD: Support payment method "ePayment".
+[+] ADD: Support payment method "optimalpayments".
+[+] ADD: Support payment method "simplifycommerce".
+[+] ADD: Support payment method "Ogone".
+[+] ADD: Support payment method "amzpayments".
+[+] ADD: Support payment method "Redsys" of "IdNovate".
+[+] ADD: Support carrier module "Seur".
+[+] ADD: Support carrier module "furgonetka".
+[+] ADD: Option to show or not the button to register the client without completing a purchase.
+[+] ADD: Option to autocomplete addresses using GeoNames.
+[+] ADD: Option to display a list of cities according to the province using GeoNames.
+[+] ADD: Some options remain checkbox selected, so the page is updated.
+[+] ADD: 4 templates (TPL) that will allow to add extra html code at checkout certain sites are created.
+[*] MOD: Updated user guide.
+[*] MOD: Changed to tab automatically if the billing address is not complete.
+[*] MOD: Improved compatibility with the payment method "StripeJS".
+[*] MOD: When updating amounts of virtual products in the checkout, no longer does a refresh.
+[*] MOD: Some design details were improved.
+[*] MOD: More compatibility with existing templates market.
+[-] FIX: When making a new language translations of many texts disappear but the complete translation into.
+[-] FIX: Problem Free Shipping missing when calculating aggregate discounts codes had.
+[-] FIX: Some problems were solved with handling shipping and billing addresses.
+
+V2.1.6 (03/12/2016)
+[+] ADD: Support payment method "CodFee" from "IdNovate".
+[+] ADD: Support payment method "QuickPay".
+[+] ADD: Support module "recargoequivalencia".
+[+] ADD: Support module "freeshipping".
+[*] MOD: Allows orders if the client is already registered, but must be active Guest Checkout.
+[*] MOD: Now allows override the TPL on the template.
+[-] FIX: When you run the file clean_garbage.php generated a bug.
+[-] FIX: Fix warnings to have a discount greater than the total of the cart.
+
+V2.1.5 (02/22/2016)
+- [ADD] Support payment method "Sequra Payment".
+- [ADD] Support payment method "Braintree JS".
+- [ADD] Support payment method "Paypal MX".
+- [ADD] Support payment method "Sveawebpay".
+- [ADD] Support payment method "Yadpay".
+- [ADD] Option to configure a default payment method.
+- [ADD] Option to display the product image zoom on the cart summary.
+- [ADD] Option to display product availability on the cart summary.
+- [MOD] Added support more payment methods and templates.
+- [MOD] Update support payment method "Stripe JS".
+- [FIX] Sometimes was shown a blank page and needed to empty the cache of PrestaShop.
+- [FIX] Display text in English when there is no language setting in the module.
+- [FIX] Problem to edit multiple fields in the record, the popup was not cleaned properly.
+- [FIX] Problem to validate date formats.
+
+V2.1.4 (01/04/2016)
+- [ADD] Support Payment Method "Mollie".
+- [ADD] Support Payment Method "pi_cashondelivery".
+- [ADD] Support Payment Method "paypalwithfee".
+- [ADD] Support module "minimumpurchasebycg".
+- [ADD] Pre-select the delivery and invoice address used in the last order.
+- [MOD] Enhancements PrestaShop validator.
+- [MOD] Documentation Update.
+- [MOD] Improving the visual message of the remaining amount for free shipping.
+- [MOD] Improved compatibility with module "Custom Field".
+- [MOD] Visual improvements in overall module.
+- [FIX] By registering through social networks, assigning the wrong password was automatically created.
+- [FIX] No change color on something texts or buttons.
+
+V2.1.3 (11/19/2015)
+- [ADD] Support Payment Method "itaushopline".
+- [ADD] Support Payment Method "pronesis_bancasella".
+- [ADD] New functionality to overwrite javascript or CSS code, without going directly to the files.
+- [FIX] Problem to change the texts of the payment methods.
+
+V2.1.2 (11/18/2015)
+- [ADD] Option to force the display of payment methods, for those that are not shown on the checkout for some reason incompatibility.
+- [ADD] New functionality for translations module from your configuration. Also to download translations as backup.
+- [ADD] Area Frequently Asked Questions (FAQ) inside module.
+- [ADD] New options for colors customizing checkout.
+- [ADD] Buttons continue and checkout, are now floating as long as they are not visible, this improves usability on mobile.
+- [ADD] Support module "SyMinimalPurchase".
+- [MOD] Corrections applied prestashop validator.
+- [MOD] Privacy policy now is under customer information.
+- [MOD] Improves to support more payment methods.
+- [FIX] When installing new language translations of the register fields were left blank in the FrontOffice.
+- [FIX] Sometimes addresses were mixed among customers.
+- [FIX] Do not load auto-complete google maps.
+- [FIX] In virtual products were not loaded provinces.
+- [FIX] It did not validate the format of the dates correctly.
+
+V2.1.0 (10/18/2015)
+- [ADD] Support Payment Method "Realex Redirect".
+- [ADD] Support Payment Method "PaypalPlus".
+- [ADD] Support Payment Method "SveawebPay".
+- [ADD] Support Payment Method "UniversalPay".
+- [MOD] Improves to support more payment methods.
+- [MOD] Re use of addresses automatically created.
+- [FIX] Solution to problem of field validation type Date in Chrome.
+
+V2.0.9 (09/14/2015)
+- [ADD] German translation.
+- [ADD] Japanese translation.
+- [ADD] Dutch translation.
+- [ADD] Russian translation.
+- [ADD] Support payment method "PaypalMX".
+- [ADD] Support payment method "SequraPayment".
+- [ADD] Support shipping method "ChronoPost".
+- [ADD] Support module "Alex Delivery Day".
+- [ADD] Validation of the character length in the record fields.
+- [MOD] Upgrade to the new Facebook API 2.4.
+- [MOD] Best implementation of standards of PrestaShop.
+- [FIX] Tax update according to the country to virtual products.
+- [FIX] Problem loading customer data on IE.
+- [FIX] The alias addresses were renowned.
+- [FIX] If you click back to the browser was confirmed after order was mistakenly shown a message Paypal.
+- [FIX] Not properly loaded Google Maps API autocomplete addresses if SSL is active.
+- [FIX] If disabled auto-generated password were not shown the fields where the customer set a personal password.
+- [FIX] No possible update and save fields in the version 1.6.1 PrestaShop.
+
+V2.0.7 (07/15/2015)
+- [ADD] Option to login through Facebook and Google.
+- [ADD] Support module "rpgiftwrapping".
+- [ADD] Support module "attributewizarpro".
+- [MOD] Improved design module configuration. Now is fully Responsive the configuration.
+- [MOD] Improve validation of NIF/NIE/CIF Spain.
+- [MOD] The type date fields are now displayed according to the format of each language.
+- [MOD] Major support to various templates.
+- [FIX] Problem with products had different carriers.
+- [FIX] Solution to AuthorizeAIM compatibility issue.
+- [FIX] By changing quantities in products, now not change positions and prevents customer confusion.
+- [FIX] Support geolocation of PrestaShop.
+- [FIX] Do not display loading the login from Chrome.
+- [FIX] If a country does not need postcode is not required place.
+- [FIX] Addresses created empty and unnecessary in orders.
+
+V2.0.6 (06/02/2015)
+- [FIX] Fixed some small visual problems in the summary cart.
+- [FIX] Fixed problems on brwoser IE9.
+- [FIX] Duplicate payment methods on the tab "Payments" when there is active Multi-Store.
+- [FIX] It was not possible to change the description of the payment methods in the module configuration.
+- [FIX] The option "Show customer group list" not working properly.
+- [FIX] Problem with various formats date.
+- [MOD] Major support to various templates.
+- [MOD] Better implementation of standards PrestaShop.
+- [ADD] Part of the translation of Roman.
+- [ADD] Part of the translation of French.
+- [ADD] Online validate the entered email if it already exists.
+- [ADD] If the module "vatnumber" is active and has active online validation of VAT number, now is validated from the checkout.
+- [ADD] Support payment module "triveneto".
+- [ADD] Implementation of small internal error log.
+
+V2.0.5 (03/18/2015)
+- [ADD] You can now add extra fields to be requested in the checkout process (BETA).
+- [ADD] When selecting a shipping method or payment, it is marked with an border to improve visibility in mobile devices.
+- [ADD] Support our module Last Minute OPC.
+- [ADD] Support module PreOrderProducts of BelVG.
+- [ADD] Support module My Collection Places.
+- [MOD] Added support to varius templates.
+- [FIX] When was registered shipping address and billing was recorded only one address.
+- [FIX] In versions PrestaShop 1.5 the increasing or decreasing amounts were doubled or tripled the accions.
+- [FIX] Was not removed the VAT on the purchase when entered one valid VAT Number.
+- [FIX] Fixed visual problem with RTL languages.
+- [FIX] Problems responsive in the summary cart.
+- [FIX] Enabling the option "Show summary of cart before checkout" does not work adding vouchers.
+- [FIX] Visual problems in the summary cart on Chrome.
+
+V2.0.4 (01/29/2015)
+- [FIX] Solution to several bugs reported in version 2.0.3.
+- [FIX] Auto-select the country if the customer has activated the geo-location in PrestaShop.
+- [FIX] Problems with window popup in some templates.
+- [FIX] Creating duplicate addresses.
+- [MOD] Message alert customers using Internet Explorer 6, 7 and 8 browser, since it is not supported in the module.
+- [MOD] Added support to varius templates.
+- [MOD] Support version 3 of module Correos.
+- [ADD] Support shipping module Kiala.
+- [ADD] Support payment module lc_paywithfee.
+- [ADD] Support payment module PaypalPro.
+- [ADD] Support module MegaProduct.
+- [ADD] Show alert to customers using IE6, IE7 and IE8 to use a latest version or another browser.
+
+V2.0.3
+- Improvements, solve problems and greater compatibility.
+
+V2.0.0
+- New version for PrestaShop 1.5 & 1.6
